@@ -44,6 +44,8 @@ class MatrixSignalReceiver(Node):
             self.send_data("2")
         elif self.matrix_color == "green":
             self.send_data("3")
+        elif self.matrix_color == "quantum":
+            self.send_data("4")
 
 def main(args=None):
     rclpy.init(args=args)
